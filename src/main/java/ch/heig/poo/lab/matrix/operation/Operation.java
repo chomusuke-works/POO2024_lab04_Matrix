@@ -10,6 +10,6 @@ public abstract class Operation {
 			throw new RuntimeException("Matrices have different modulos");
 		}
 
-		return a;
+		return a.copy();
 	}
 }
