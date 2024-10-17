@@ -19,7 +19,7 @@ public class Addition extends Operation {
 
 		for (int i = 0; i < result.getM(); ++i) {
 			for (int j = 0; j < result.getN(); ++j) {
-				result.set(i, j, A.get(i, j) + B.get(i, j));
+				result.set(i, j, (A.get(i, j) + B.get(i, j)) % A.getModulus());
 			}
 		}
 
