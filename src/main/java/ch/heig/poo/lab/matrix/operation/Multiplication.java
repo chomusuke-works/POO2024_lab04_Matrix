@@ -6,7 +6,13 @@ public class Multiplication extends Operation {
 
 	@Override
 	public Matrix apply(Matrix A, Matrix B) {
-		Matrix result = super.apply(A, B);
+		checkMatrixPreconditions(A, B);
+
+		Matrix result = new Matrix(
+			A.getM(),
+			B.getN(),
+			A.getModulus()
+		);
 
 		if (A.getM() != B.getN()) {
 			throw new RuntimeException("Incorrect dimensions for matrix multiplication");
