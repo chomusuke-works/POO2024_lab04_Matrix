@@ -3,9 +3,6 @@ package ch.heig.poo.lab.matrix.operation;
 import ch.heig.poo.lab.matrix.Matrix;
 
 public class Multiplication extends Operation {
-	public Multiplication() {
-		super();
-	}
 
 	@Override
 	public Matrix apply(Matrix a, Matrix b) {
