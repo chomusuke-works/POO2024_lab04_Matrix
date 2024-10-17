@@ -23,6 +23,16 @@ public class Matrix {
 		return modulus;
 	}
 
+	public int get(int x, int y) {
+		return 0;  // TODO implemented in different branch
+	}
+
+	public Matrix copy() {
+		Matrix result = new Matrix(m, n, modulus);
+
+		return result;  // TODO implemented in different branch
+	}
+
 	@Override
 	public String toString() {
 		return "";
