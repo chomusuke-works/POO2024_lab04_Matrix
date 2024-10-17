@@ -67,32 +67,6 @@ public class Matrix {
 		values[y][x] = value;
 	}
 
-	public int getM() {
-		return m;
-	}
-
-	public int getN() {
-		return n;
-	}
-
-	public int getModulus() {
-		return modulus;
-	}
-
-	public int get(int x, int y) {
-		return 0;  // TODO implemented in different branch
-	}
-
-	public void set(int x, int y, int value) {
-		// TODO implemented in different branch
-	}
-
-	public Matrix copy() {
-		Matrix result = new Matrix(m, n, modulus);
-
-		return result;  // TODO implemented in different branch
-	}
-
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
