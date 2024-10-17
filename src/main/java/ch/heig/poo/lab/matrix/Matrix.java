@@ -1,26 +1,14 @@
 package ch.heig.poo.lab.matrix;
 
 public class Matrix {
-	private final int m;
 	private final int n;
+	private final int m;
 	private final int modulus;
 
-	public Matrix(int m, int n, int modulus) {
-		this.m = m;
+	public Matrix(int n, int m, int modulus) {
 		this.n = n;
+		this.m = m;
 		this.modulus = modulus;
-	}
-
-	public int getM() {
-		return m;
-	}
-
-	public int getN() {
-		return n;
-	}
-
-	public int getModulus() {
-		return modulus;
 	}
 
 	@Override
