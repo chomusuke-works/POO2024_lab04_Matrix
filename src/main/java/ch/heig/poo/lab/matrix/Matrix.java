@@ -4,7 +4,7 @@ public class Matrix {
 	private final int m;
 	private final int n;
 	private final int modulus;
-	private int[][] values;
+	private final int[][] values;
 
 	public Matrix(int m, int n, int modulus) {
 		this.m = m;
