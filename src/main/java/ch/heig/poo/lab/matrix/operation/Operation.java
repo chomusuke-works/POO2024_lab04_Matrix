@@ -4,14 +4,14 @@ import ch.heig.poo.lab.matrix.Matrix;
 
 public abstract class Operation {
 
-	public Matrix apply(Matrix a, Matrix b) {
-		if (a == null || b == null) {
+	public Matrix apply(Matrix A, Matrix B) {
+		if (A == null || B == null) {
 			throw new NullPointerException("Matrix cannot be null");
 		}
-		if (a.getModulus() != b.getModulus()) {
+		if (A.getModulus() != B.getModulus()) {
 			throw new RuntimeException("Matrices have different modulos");
 		}
 
-		return a.copy();
+		return A.copy();
 	}
 }
