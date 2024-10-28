@@ -18,26 +18,16 @@ public class Main {
 		Matrix first = new Matrix(m1, n1, modulus);
 		Matrix second = new Matrix(m2, n2, modulus);
 
-		System.out.println("The module is: " + modulus);
-		System.out.println();
+		System.out.printf("The module is: %d\n", modulus);
 
-		System.out.println("one");
-		System.out.println(first);
-		System.out.println();
+		System.out.printf("one\n%s\n\n", first);
 
-		System.out.println("two");
-		System.out.println(second);
-		System.out.println();
+		System.out.printf("two\n%s\n\n", second);
 
-		System.out.println("one + two");
-		System.out.println(new Addition().apply(first, second));
-		System.out.println();
+		System.out.printf("one + two\n%s\n\n", new Addition().apply(first, second));
 
-		System.out.println("one - two");
-		System.out.println(new Subtraction().apply(first, second));
-		System.out.println();
+		System.out.printf("one - two\n%s\n\n", new Subtraction().apply(first, second));
 
-		System.out.println("one x two");
-		System.out.println(new Multiplication().apply(first, second));
+		System.out.printf("one x two\n%s\n\n", new Multiplication().apply(first, second));
 	}
 }
