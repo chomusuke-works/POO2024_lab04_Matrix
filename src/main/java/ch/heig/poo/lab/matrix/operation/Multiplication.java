@@ -2,7 +2,7 @@ package ch.heig.poo.lab.matrix.operation;
 
 import ch.heig.poo.lab.matrix.Matrix;
 
-public class ComponentMultiplication extends Operation {
+public class Multiplication extends Operation {
 
     @Override
     public Matrix apply(Matrix A, Matrix B) {

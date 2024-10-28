@@ -1,7 +1,7 @@
 package ch.heig.poo.lab;
 
 import ch.heig.poo.lab.matrix.Matrix;
-import ch.heig.poo.lab.matrix.operation.ComponentMultiplication;
+import ch.heig.poo.lab.matrix.operation.Multiplication;
 
 public class Main {
 	public static void main(String[] args) {
@@ -28,6 +28,6 @@ public class Main {
 		System.out.println();
 
 		System.out.println("one x two");
-		System.out.println(new ComponentMultiplication().apply(first, second));
+		System.out.println(new Multiplication().apply(first, second));
 	}
 }
