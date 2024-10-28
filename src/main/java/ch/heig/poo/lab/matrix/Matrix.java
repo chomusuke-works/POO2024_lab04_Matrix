@@ -39,18 +39,6 @@ public class Matrix {
 		System.arraycopy(values, 0, this.values, 0, m);
 	}
 
-	public Matrix inverse() {
-		Matrix result = this.copy();
-
-		for (int i = 0; i < m; ++i) {
-			for (int j = 0; j < n; ++j) {
-				result.values[i][j] *= -1;
-			}
-		}
-
-		return result;
-	}
-
 	public int getM() {
 		return m;
 	}
@@ -61,10 +49,6 @@ public class Matrix {
 
 	public int getModulus() {
 		return modulus;
-	}
-
-	public Matrix copy() {
-		return new Matrix(m, n, modulus, values);
 	}
 
 	public int get(int x, int y) {
