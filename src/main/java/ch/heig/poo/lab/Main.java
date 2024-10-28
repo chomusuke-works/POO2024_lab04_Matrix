@@ -1,7 +1,9 @@
 package ch.heig.poo.lab;
 
 import ch.heig.poo.lab.matrix.Matrix;
+import ch.heig.poo.lab.matrix.operation.Addition;
 import ch.heig.poo.lab.matrix.operation.Multiplication;
+import ch.heig.poo.lab.matrix.operation.Subtraction;
 
 public class Main {
 	public static void main(String[] args) {
@@ -25,6 +27,14 @@ public class Main {
 
 		System.out.println("two");
 		System.out.println(second);
+		System.out.println();
+
+		System.out.println("one + two");
+		System.out.println(new Addition().apply(first, second));
+		System.out.println();
+
+		System.out.println("one - two");
+		System.out.println(new Subtraction().apply(first, second));
 		System.out.println();
 
 		System.out.println("one x two");
