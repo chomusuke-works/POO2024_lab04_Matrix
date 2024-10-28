@@ -14,8 +14,8 @@ public class ComponentMultiplication extends Operation {
 
         for (int y = 0; y < resultM; ++y) {
             for (int x = 0; x < resultN; ++x) {
-                int valueA = y < A.getM() && x < A.getN() ? A.get(x, y) : 1;
-                int valueB = y < B.getM() && x < B.getN() ? B.get(x, y) : 1;
+                int valueA = y < A.getM() && x < A.getN() ? A.get(x, y) : 0;
+                int valueB = y < B.getM() && x < B.getN() ? B.get(x, y) : 0;
                 result.set(x, y, (valueA * valueB) % result.getModulus());
             }
         }
