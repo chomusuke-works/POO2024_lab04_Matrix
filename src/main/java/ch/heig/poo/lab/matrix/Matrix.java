@@ -14,8 +14,8 @@ public class Matrix {
 		if (m <= 0 || n <= 0 || modulus <= 0) throw new IllegalArgumentException("Invalid arguments.");
 
 		this.values = new int[m][n];
-		for (int y = 0; y < m; y++) {
-			for (int x = 0; x < n; x++) {
+		for (int y = 0; y < m; ++y) {
+			for (int x = 0; x < n; ++x) {
 				values[y][x] = (int) Math.round(Math.random() * modulus) % modulus;
 			}
 		}
@@ -26,7 +26,7 @@ public class Matrix {
 
 		if (values.length != m * n) throw new IllegalArgumentException("Invalid amount of values.");
 
-		for (int y = 0; y < m; y++) {
+		for (int y = 0; y < m; ++y) {
             System.arraycopy(values, y * n, this.values[y], 0, n);
 		}
 	}
