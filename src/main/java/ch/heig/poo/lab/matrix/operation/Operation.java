@@ -58,15 +58,14 @@ public abstract class Operation {
 	 *
 	 * @param A the first matrix
 	 * @param B the second matrix
-	 * @throws NullPointerException     if a matrix is null
-	 * @throws IllegalArgumentException if the matrices' modulos are different
+	 * @throws RuntimeException if a matrix is null or modulos don't match
 	 */
 	private static void checkMatrixPreconditions(Matrix A, Matrix B) {
 		if (A == null || B == null) {
-			throw new NullPointerException("Matrix cannot be null");
+			throw new RuntimeException("Matrix cannot be null");
 		}
 		if (A.getModulus() != B.getModulus()) {
-			throw new IllegalArgumentException("Matrices have different modulos");
+			throw new RuntimeException("Matrices have different modulos");
 		}
 	}
 }
