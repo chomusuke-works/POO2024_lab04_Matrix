@@ -14,7 +14,7 @@ public abstract class Operation {
 			for (int x = 0; x < resultN; ++x) {
 				int valueA = y < A.getM() && x < A.getN() ? A.get(x, y) : 0;
 				int valueB = y < B.getM() && x < B.getN() ? B.get(x, y) : 0;
-				result.set(x, y, absMod(operate(valueA, valueB), result.getModulus()));
+				result.set(x, y, absMod(componentOperation(valueA, valueB), result.getModulus()));
 			}
 		}
 
@@ -35,5 +35,5 @@ public abstract class Operation {
 		}
 	}
 
-	protected abstract int operate(int a, int b);
+	protected abstract int componentOperation(int a, int b);
 }
