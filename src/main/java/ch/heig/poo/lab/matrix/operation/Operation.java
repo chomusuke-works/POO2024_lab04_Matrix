@@ -9,7 +9,6 @@ public abstract class Operation {
 	 *
 	 * @param A the first matrix
 	 * @param B the second matrix
-	 *
 	 * @return the resulting matrix
 	 */
 	public Matrix apply(Matrix A, Matrix B) {
@@ -30,8 +29,14 @@ public abstract class Operation {
 		return result;
 	}
 
+	/**
+	 * Applies an operation to the given component values.
+	 *
+	 * @param a the first component value
+	 * @param b the second component value
+	 * @return the result of the operation
+	 */
 	protected abstract int componentOperation(int a, int b);
-
 
 
 	/**
@@ -39,8 +44,7 @@ public abstract class Operation {
 	 * Implementation found on <a href="https://stackoverflow.com/questions/4467539/javascript-modulo-gives-a-negative-result-for-negative-numbers">StackOverflow</a>
 	 *
 	 * @param value an integer value
-	 * @param mod the modulus
-	 *
+	 * @param mod   the modulus
 	 * @return the absolute modulus
 	 */
 	private int absMod(int value, int mod) {
@@ -54,8 +58,7 @@ public abstract class Operation {
 	 *
 	 * @param A the first matrix
 	 * @param B the second matrix
-	 *
-	 * @throws NullPointerException if a matrix is null
+	 * @throws NullPointerException     if a matrix is null
 	 * @throws IllegalArgumentException if the matrices' modulos are different
 	 */
 	private static void checkMatrixPreconditions(Matrix A, Matrix B) {
