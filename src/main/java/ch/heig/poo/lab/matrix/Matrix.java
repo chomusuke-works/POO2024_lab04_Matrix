@@ -57,9 +57,10 @@ public class Matrix {
 	 * @param x the x coordinate
 	 * @param y the y coordinate
 	 * @return the desired value
+	 * @throws IndexOutOfBoundsException when the given coordinates are outside of the matrix.
 	 */
 	public int get(int x, int y) {
-		if (x < 0 || x >= n || y < 0 || y >= m) throw new IllegalArgumentException("Invalid coordinates.");
+		if (x < 0 || x >= n || y < 0 || y >= m) throw new IndexOutOfBoundsException("Invalid coordinates.");
 
 		return values[y][x];
 	}
@@ -70,9 +71,10 @@ public class Matrix {
 	 * @param x the x coordinate
 	 * @param y the y coordinate
 	 * @param value the value to save
+	 * @throws IndexOutOfBoundsException when the given coordinates are outside of the matrix.
 	 */
 	public void set(int x, int y, int value) {
-		if (x < 0 || x >= n || y < 0 || y >= m) throw new IllegalArgumentException("Invalid coordinates.");
+		if (x < 0 || x >= n || y < 0 || y >= m) throw new IndexOutOfBoundsException("Invalid coordinates.");
 
 		values[y][x] = value;
 	}
