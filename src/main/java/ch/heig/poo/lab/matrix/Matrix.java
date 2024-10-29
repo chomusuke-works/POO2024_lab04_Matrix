@@ -51,12 +51,26 @@ public class Matrix {
 		return modulus;
 	}
 
+	/**
+	 * Gets the value at coordinates (x,y) in the matrix.
+	 *
+	 * @param x the x coordinate
+	 * @param y the y coordinate
+	 * @return the desired value
+	 */
 	public int get(int x, int y) {
 		if (x < 0 || x >= n || y < 0 || y >= m) throw new IllegalArgumentException("Invalid coordinates.");
 
 		return values[y][x];
 	}
 
+	/**
+	 * Sets the value at coordinates (x,y) to a given value.
+	 *
+	 * @param x the x coordinate
+	 * @param y the y coordinate
+	 * @param value the value to save
+	 */
 	public void set(int x, int y, int value) {
 		if (x < 0 || x >= n || y < 0 || y >= m) throw new IllegalArgumentException("Invalid coordinates.");
 
