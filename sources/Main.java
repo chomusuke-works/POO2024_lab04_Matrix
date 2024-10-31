@@ -14,7 +14,7 @@ public class Main {
 		Matrix first = new Matrix(m1, n1, modulus);
 		Matrix second = new Matrix(m2, n2, modulus);
 
-		System.out.printf("The module is: %d\n", modulus);
+		System.out.printf("The modulus is: %d\n\n", modulus);
 
 		System.out.printf("one\n%s\n\n", first);
 
