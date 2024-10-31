@@ -1,4 +1,4 @@
-package ch.heig.poo.lab.matrix.operation;
+package matrix.operation;
 
 public class Addition extends Operation {
 	@Override

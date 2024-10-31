@@ -1,9 +1,5 @@
-package ch.heig.poo.lab;
-
-import ch.heig.poo.lab.matrix.Matrix;
-import ch.heig.poo.lab.matrix.operation.Addition;
-import ch.heig.poo.lab.matrix.operation.Multiplication;
-import ch.heig.poo.lab.matrix.operation.Subtraction;
+import matrix.Matrix;
+import matrix.operation.*;
 
 public class Main {
 	public static void main(String[] args) {

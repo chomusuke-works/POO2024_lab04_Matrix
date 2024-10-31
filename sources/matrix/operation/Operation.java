@@ -1,6 +1,6 @@
-package ch.heig.poo.lab.matrix.operation;
+package matrix.operation;
 
-import ch.heig.poo.lab.matrix.Matrix;
+import matrix.Matrix;
 
 public abstract class Operation {
 

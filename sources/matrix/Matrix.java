@@ -1,4 +1,4 @@
-package ch.heig.poo.lab.matrix;
+package matrix;
 
 public class Matrix {
 	private final int m;
